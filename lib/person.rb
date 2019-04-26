@@ -23,7 +23,7 @@ class Person
  end 
  
  def self.send(attribute)
-   send.each {|keys, values| self.send(("#{keys}="), values}
+   attribute.each {|keys, values| self.send(("#{keys}="), values}
    end
  end
 end
