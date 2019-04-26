@@ -24,6 +24,5 @@ class Person
  
  def self.send(attribute)
    attribute.each {|keys, values| self.send(("#{keys}="), values}
-   end
  end
 end
