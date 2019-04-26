@@ -20,9 +20,11 @@ class Person
    @glove_size = glove_size 
    @pant_length = pant_length 
    @pant_width = pant_width
- end 
+  end 
  
- def self.send(attribute)
+  def self.send(attribute)
    attribute.each {|keys, values| self.send(("#{keys}="), values}
- end
+  end
+ 
+ 
 end
