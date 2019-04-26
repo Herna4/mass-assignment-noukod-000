@@ -22,7 +22,7 @@ class Person
    @pant_width = pant_width
  end 
  
- def self.send 
+ def self.send(attribute)
    send.each {|keys, values| self.send(("#{keys}="), values}
    end
  end
