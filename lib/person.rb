@@ -22,8 +22,8 @@ class Person
    @pant_width = pant_width
   end 
  
-  def self.send(attribute)
-   attribute.each {|keys, values| self.send(("#{keys}="), values}
+  def self.send(attributes)
+   attributes.each {|keys, values| self.send(("#{keys}="), values}
   end
  
  
